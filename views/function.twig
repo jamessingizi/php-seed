@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>James Singizi</title>
+	</head>
+<body>
+{# i am a comment #}
+<p>{{ hello_world }}</p>
+{% set name = 'call me James Singizi' %}
+<h1>{{ name }}</h1>
+
+{# applying a filter in twig #}
+{% filter upper %}
+all this text should appear in uppercase
+{% endfilter %}
+
+{# another filter #}
+{% set code = '<html> is a good language </html>' %}<br>
+{{ code| striptags }}
+<br>
+
+{# rounding using the twig built i round filter#}
+{{'rounding the number 45.05 ' }}
+<br>
+
+{{ 45.05|round(2,'floor') }}
+
+</body>
+</html>
